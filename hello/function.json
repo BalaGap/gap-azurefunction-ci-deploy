@@ -1,21 +1,16 @@
 {
-  "scriptFile": "..\\gap-azurefunction-ci-deploy-1.0.jar",
-  "entryPoint": "com.gap.functions.Function.hello",
-  "bindings": [
-    {
-      "type": "httpTrigger",
-      "name": "req",
-      "direction": "in",
-      "authLevel": "function",
-      "methods": [
-        "get",
-        "post"
-      ]
-    },
-    {
-      "type": "http",
-      "name": "$return",
-      "direction": "out"
-    }
-  ]
+  "scriptFile" : "..\\gap-azurefunctions-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.gap.functions.Function.hello",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "req",
+    "direction" : "in",
+    "authLevel" : "anonymous",
+    "methods" : [ "get", "post" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ],
+  "disabled" : false
 }
